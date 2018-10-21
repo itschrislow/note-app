@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <h1 class="display-4">Note List</h1>
+
+                <form id="searchList">
+                    <input id="searchInput" class="form-control" onkeyup="nc.getQuery()" type="text" placeholder="Search title">
+                </form>
+
+                <ul id="noteList" class="list-group"></ul>
+            </div>
+            <div class="col">
+                <h1 class="display-4">New Note</h1>
+
+                <form>
+                    <input id="title" class="form-control" type="text" placeholder="Enter title">
+                    <br>
+                    <textarea id="content" class="form-control" type="text" placeholder="Enter text"></textarea>
+                </form>
+                <br>
+
+                <button id="addNote" class="btn btn-outline-warning">Add Note</button>
+                <button id="delNote" class="btn btn-outline-danger">Delete Note</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
